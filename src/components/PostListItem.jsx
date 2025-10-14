@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom"
 import IMAGE from "./Image"
 
-const PostListItem = () => {
+const PostListItem = ({item}) => {
   return (
 
     <div className="flex flex-col xl:flex-row gap-8">
         {/*image */}
         <div className="md:hidden xl:block xl:w-1/3">
-            <IMAGE  Src="postImg.jpeg"  className="rounded-2xl object-cover" w="735"/>
+            <IMAGE  Src={item}  className="rounded-2xl object-cover" w="735"/>
             
             </div>
         {/*details */}
